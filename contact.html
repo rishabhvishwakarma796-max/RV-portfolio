@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | RV Portfolio - Rishabh Vishwkarma</title>
+  <meta name="description" content="Get in touch with Rishabh Vishwkarma. WhatsApp: +91 7803094853, Email: rvish230801@gmail.com. Based in Bhopal, MP.">
+  <link rel="canonical" href="https://rvportfolio.com/contact">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="gradient-canvas"></canvas>
+  <canvas id="particle-canvas"></canvas>
+
+  <div class="video-backdrop">
+    <video autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture class="bg-video solar-video">
+      <source src="solar-system.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture class="bg-video brand-video">
+      <source src="rv-portfolio.mp4" type="video/mp4">
+    </video>
+    <canvas id="solar-canvas"></canvas>
+    <canvas id="brand-canvas"></canvas>
+    <div class="video-overlay"></div>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">RV <span>Portfolio</span></a>
+      <div class="nav-toggle" id="nav-toggle" role="button" tabindex="0" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero section">
+    <div class="container">
+      <h1 class="section-title">Get In <span class="highlight">Touch</span></h1>
+      <p class="page-hero-sub">Let's connect and build something great together</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-card glass glow-card" onclick="window.open('https://wa.me/917803094853','_blank')">
+          <i class="fab fa-whatsapp"></i>
+          <h3>WhatsApp</h3>
+          <p>+91 7803094853</p>
+          <span class="contact-action">Chat Now <i class="fas fa-arrow-right"></i></span>
+        </div>
+        <div class="contact-card glass glow-card" onclick="window.location.href='mailto:rvish230801@gmail.com'">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>rvish230801@gmail.com</p>
+          <span class="contact-action">Send Mail <i class="fas fa-arrow-right"></i></span>
+        </div>
+        <div class="contact-card glass glow-card">
+          <i class="fas fa-phone-alt"></i>
+          <h3>Phone</h3>
+          <p>+91 7803094853</p>
+          <span class="contact-action">Call Now</span>
+        </div>
+        <div class="contact-card glass glow-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Location</h3>
+          <p>Bhopal, Madhya Pradesh</p>
+          <span class="contact-action">India</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact-form-section">
+    <div class="container">
+      <div class="contact-form-wrap glass glow-card">
+        <h2 class="form-title">Send a <span class="highlight">Message</span></h2>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder="Subject">
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary glow-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-info-grid">
+        <div class="contact-info-item glass glow-card">
+          <i class="fas fa-clock"></i>
+          <h3>Availability</h3>
+          <p>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 4:00 PM</p>
+        </div>
+        <div class="contact-info-item glass glow-card">
+          <i class="fas fa-reply"></i>
+          <h3>Response Time</h3>
+          <p>I usually respond within<br>24 hours on weekdays</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">RV <span>Portfolio</span></div>
+      <p>&copy; 2026 RV Portfolio | Designed by Rishabh Vishwkarma</p>
+      <div class="footer-links">
+        <a href="https://wa.me/917803094853" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:rvish230801@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/rishabh-vishwakarma-812b96414/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/rishabhvishwakarma796-max" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

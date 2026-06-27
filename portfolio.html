@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | RV Portfolio - Projects by Rishabh Vishwkarma</title>
+  <meta name="description" content="Explore web development projects by Rishabh Vishwkarma - E-Commerce, Project Management, Blog Platform, and more.">
+  <link rel="canonical" href="https://rvportfolio.com/portfolio">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="gradient-canvas"></canvas>
+  <canvas id="particle-canvas"></canvas>
+
+  <div class="video-backdrop">
+    <video autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture class="bg-video solar-video">
+      <source src="solar-system.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture class="bg-video brand-video">
+      <source src="rv-portfolio.mp4" type="video/mp4">
+    </video>
+    <canvas id="solar-canvas"></canvas>
+    <canvas id="brand-canvas"></canvas>
+    <div class="video-overlay"></div>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">RV <span>Portfolio</span></a>
+      <div class="nav-toggle" id="nav-toggle" role="button" tabindex="0" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero section">
+    <div class="container">
+      <h1 class="section-title">My <span class="highlight">Portfolio</span></h1>
+      <p class="page-hero-sub">Some of the projects I've built</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="projects-grid">
+        <div class="project-card glass glow-card">
+          <div class="project-img"><i class="fas fa-shopping-cart"></i></div>
+          <h3>E-Commerce Platform</h3>
+          <p>A full-stack e-commerce solution built with the MERN stack featuring JWT authentication, Stripe payment integration, and a complete admin dashboard for inventory and order management.</p>
+          <div class="project-tech">
+            <span>React</span><span>Node.js</span><span>MongoDB</span><span>Stripe</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-outline-sm"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="btn-outline-sm"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+        <div class="project-card glass glow-card">
+          <div class="project-img"><i class="fas fa-tasks"></i></div>
+          <h3>Project Management Tool</h3>
+          <p>A Spring Boot + Thymeleaf application with role-based access control, task tracking, real-time notifications, and MySQL database — designed for agile teams.</p>
+          <div class="project-tech">
+            <span>Spring Boot</span><span>Thymeleaf</span><span>MySQL</span><span>Bootstrap</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-outline-sm"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="btn-outline-sm"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+        <div class="project-card glass glow-card">
+          <div class="project-img"><i class="fas fa-globe"></i></div>
+          <h3>Portfolio Website</h3>
+          <p>A responsive multi-page portfolio built with HTML, CSS, and JavaScript featuring an AMOLED dark theme, video background, particle network, and full cross-device optimization.</p>
+          <div class="project-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-outline-sm"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="btn-outline-sm"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+        <div class="project-card glass glow-card">
+          <div class="project-img"><i class="fas fa-blog"></i></div>
+          <h3>Blog Platform</h3>
+          <p>A feature-rich blogging platform with Next.js frontend, Node.js API backend, rich text editing, user authentication, and comment systems with MySQL persistence.</p>
+          <div class="project-tech">
+            <span>Next.js</span><span>Node.js</span><span>MySQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-outline-sm"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="btn-outline-sm"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+        <div class="project-card glass glow-card">
+          <div class="project-img"><i class="fas fa-calendar-check"></i></div>
+          <h3>Appointment Scheduler</h3>
+          <p>A PHP + MySQL appointment booking system with calendar integration, email notifications via PHPMailer, and an admin panel for managing slots and clients.</p>
+          <div class="project-tech">
+            <span>PHP</span><span>MySQL</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-outline-sm"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="btn-outline-sm"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+        <div class="project-card glass glow-card">
+          <div class="project-img"><i class="fas fa-chart-line"></i></div>
+          <h3>Dashboard Analytics</h3>
+          <p>A data visualization dashboard built with Java Spring Boot backend and Thymeleaf frontend, featuring real-time chart updates using Chart.js and PDF report generation.</p>
+          <div class="project-tech">
+            <span>Spring Boot</span><span>Thymeleaf</span><span>Chart.js</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-outline-sm"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="btn-outline-sm"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">RV <span>Portfolio</span></div>
+      <p>&copy; 2026 RV Portfolio | Designed by Rishabh Vishwkarma</p>
+      <div class="footer-links">
+        <a href="https://wa.me/917803094853" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:rvish230801@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/rishabh-vishwakarma-812b96414/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/rishabhvishwakarma796-max" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

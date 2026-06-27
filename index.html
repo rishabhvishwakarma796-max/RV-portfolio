@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RV Portfolio | Rishabh Vishwkarma - Full Stack Web Developer</title>
+  <meta name="description" content="Rishabh Vishwkarma - Full Stack Web Developer from Bhopal, MP. Specializing in MERN Stack, Spring Boot, Next.js & modern web technologies.">
+  <meta name="keywords" content="Rishabh Vishwkarma, RV Portfolio, Web Developer, MERN Stack, Spring Boot, Next.js, RGPV, Bhopal">
+  <meta name="author" content="Rishabh Vishwkarma">
+  <meta property="og:title" content="RV Portfolio | Rishabh Vishwkarma">
+  <meta property="og:description" content="Full Stack Web Developer crafting modern, scalable web experiences">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rvportfolio.com">
+  <link rel="canonical" href="https://rvportfolio.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="gradient-canvas"></canvas>
+  <canvas id="particle-canvas"></canvas>
+
+  <div class="video-backdrop">
+    <video autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture class="bg-video solar-video">
+      <source src="solar-system.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture class="bg-video brand-video">
+      <source src="rv-portfolio.mp4" type="video/mp4">
+    </video>
+    <canvas id="solar-canvas"></canvas>
+    <canvas id="brand-canvas"></canvas>
+    <div class="video-overlay"></div>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">RV <span>Portfolio</span></a>
+      <div class="nav-toggle" id="nav-toggle" role="button" tabindex="0" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge">RV Portfolio</div>
+      <h1 class="hero-title">
+        I am  Rishabh Vishwakarma
+      </h1>
+      <p class="hero-subtitle"><span class="typed-title"></span></p>
+      <p class="hero-desc">Building modern, scalable web experiences</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary glow-btn">Contact Me <i class="fas fa-paper-plane"></i></a>
+        <a href="portfolio.html" class="btn btn-outline glow-btn-outline">View Projects <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="hero-social">
+        <a href="https://wa.me/917803094853" target="_blank" aria-label="WhatsApp" class="social-glow"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:rvish230801@gmail.com" aria-label="Email" class="social-glow"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/rishabh-vishwakarma-812b96414/" target="_blank" aria-label="LinkedIn" class="social-glow"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/rishabhvishwakarma796-max" target="_blank" aria-label="GitHub" class="social-glow"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+  <section class="section home-about">
+    <div class="container">
+      <h2 class="section-title">Welcome to <span class="highlight">My World</span></h2>
+      <div class="home-about-grid">
+        <div class="home-about-text glass glow-card">
+          <p>I'm a passionate Full Stack Web Developer from <strong>Bhopal, Madhya Pradesh</strong> with a <strong>B.Tech</strong> degree from <strong>RGPV</strong>. I specialize in building modern, responsive, and high-performance web applications using cutting-edge technologies.</p>
+          <p>From <strong>MERN Stack</strong> to <strong>Spring Boot</strong>, <strong>Next.js</strong> to <strong>PHP</strong> — I bring ideas to life on the web with clean architecture and pixel-perfect design.</p>
+          <a href="about.html" class="btn btn-outline glow-btn-outline">Know More <i class="fas fa-user"></i></a>
+        </div>
+        <div class="home-stats glass glow-card">
+          <div class="stat-item">
+            <span class="stat-number" data-count="12">0</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="6">0</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="100">0</span>
+            <span class="stat-label">% Responsive</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Possibilities</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section home-skills">
+    <div class="container">
+      <h2 class="section-title">Tech <span class="highlight">Stack</span></h2>
+      <div class="skills-grid">
+        <div class="skill-item glow-skill"><i class="fab fa-html5"></i><span>HTML5</span></div>
+        <div class="skill-item glow-skill"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+        <div class="skill-item glow-skill"><i class="fab fa-js"></i><span>JavaScript</span></div>
+        <div class="skill-item glow-skill"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
+        <div class="skill-item glow-skill"><i class="fas fa-leaf"></i><span>Thymeleaf</span></div>
+        <div class="skill-item glow-skill"><i class="fab fa-java"></i><span>Java</span></div>
+        <div class="skill-item glow-skill"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+        <div class="skill-item glow-skill"><i class="fas fa-cubes"></i><span>MERN Stack</span></div>
+        <div class="skill-item glow-skill"><i class="fas fa-server"></i><span>Spring Boot</span></div>
+        <div class="skill-item glow-skill"><i class="fab fa-react"></i><span>Next.js</span></div>
+        <div class="skill-item glow-skill"><i class="fab fa-php"></i><span>PHP</span></div>
+        <div class="skill-item glow-skill"><i class="fas fa-database"></i><span>MySQL</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">RV <span>Portfolio</span></div>
+      <p>&copy; 2026 RV Portfolio | Designed by Rishabh Vishwkarma</p>
+      <div class="footer-links">
+        <a href="https://wa.me/917803094853" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:rvish230801@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/rishabh-vishwakarma-812b96414/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/rishabhvishwakarma796-max" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
